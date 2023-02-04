@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login y Registro - Mande</title>
+  <link rel="stylesheet" href="estilo.css" type="text/css">
+
+
+</head>
+
+<body>
+
+<main>
+
+  <div class="contenedor__todo">
+
+    <div class="caja_Trasera">
+
+      <div class="caja_Trasera_Login">
+
+        <h3>¿Ya tienes una cuenta?</h3>
+        <p>Debes iniciar sesión para acceder a la pagina</p>
+        <button id="Btn_Iniciar_Sesion"> Iniciar Sesión </button>
+
+      </div>
+      <div class="caja_Trasera_Registro">
+
+      <h3>¿Como deseas registrarte?</h3>
+        <p>Debes registrarte para acceder a la pagina</p>
+        <button id="Btn_Registrarse_Asociado"> Registrar Asociado</button>
+        <button id = "Btn_Registrarse_cliente">Registrar Cliente</button>
+
+      </div>
+
+    </div>
+
+    <div class="Contenerdo_Login_Registro">
+
+      <form action="" class="formulario__Login">
+
+        <h2>Iniciar Sesión</h2>
+        <input type="text" placeholder="Correo electronico">
+        <input type="password" placeholder="Contraseña">
+        <button>Entrar</button>
+
+      </form>
+
+      <div class="form formulario__Registrar__Asociado">
+
+        
+
+        <h2>Registrarse</h2>
+        <input type="text" placeholder="Nombre completo">
+        <input type="number" placeholder="Documento">
+        <input type="text" placeholder="Direccion de residencia">
+        <input type="text" placeholder="Labor a desempeñar">
+        <input type="number" placeholder="Precio por hora">
+        <input type="email" placeholder="Correo electronico">
+        <input type="password" placeholder="Contraseña">
+
+        <form name = "Subir_Documento" type = "POST" enctype="multipart/form-data">
+
+          <input type="file" name = "imagen">
+
+        </form>
+
+
+        <form name = "Subir_Foto" type = "POST" enctype="multipart/form-data">
+
+          <input type="file" name = "imagen">
+
+        </form>
+
+        <button>Registrarse</button>
+
+      </div>
+
+      <div class="form formulario__Registrar__Cliente">
+        <h2>Registrarse</h2>
+        <input type="text" placeholder="Nombre completo">
+        <input type="number" placeholder="Documento">
+        <input type="text" placeholder="Direccion de residencia">
+        <input type="number" placeholder="telefono">
+        <input type="email" placeholder="Correo electronico">
+        <input type="password" placeholder="Contraseña">
+
+        <form name = "Subir_Documento" type = "POST" enctype="multipart/form-data">
+
+          <input type="file" name = "imagen">
+
+        </form>
+
+
+        <form name = "Subir_Recibo_Publico" type = "POST" enctype="multipart/form-data">
+
+          <input type="file" name = "imagen">
+
+        </form>
+
+        <button>Registrarse</button>
+
+    </div>
+
+  </div>
+
+</main>
+
+</body>
+
+</html>
